@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OCS Recruitmement</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            background-color: #7fbfff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div  style="display: flex; flex-direction: column;">
+        <form id = "form">
+            <label for="username">Username:</label><br/>
+            <input id="username"  type="text" placeholder="Enter Username" required name="username"><br/>
+            <label for="password">Password:</label><br/>
+            <input id="password" type="password" placeholder="Enter Password" required name="password"><br/>
+            <button type="button" onclick="submitForm()">Sign In</button>
+        </form>
+        <table id="result" style="display: none;">
+            <tbody id="result-body">
+             <tr>
+                <th>User ID</th>
+                <th>Password Hash</th>
+                <th>Role</th>
+             </tr>       
+            </tbody>
+        </table>
+        <br>
+        <button onclick="window.location.reload()" id="fetch_again" style="display: none; width : 125px; ">Fetch Again</button>
+    </div>
+    <script src="md5.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
