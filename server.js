@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(express.static("/home/ben/Desktop/WebD/OCS Recruitmement/"));
+app.use(express.static("/"));
 app.use(cors());
 
 const connectionString = "postgresql://bens.21354:dqyEb0CW7mPB@ep-lively-snow-a5o12dev.us-east-2.aws.neon.tech/WebD-Harkirat?sslmode=require"
@@ -19,7 +19,7 @@ db.connect().then(function(){console.log("Connected to PostgreSQL")}).catch(func
 app.use(bodyParser.json());
 
 app.get("/", function(req, res){
-    res.sendFile("/home/ben/Desktop/WebD/OCS Recruitmement/frontend.html");
+    res.sendFile("./frontend.html");
 })
 
 app.post("/signin",async function(req,res){
