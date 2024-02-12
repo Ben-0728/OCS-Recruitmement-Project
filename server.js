@@ -31,6 +31,7 @@ app.post("/signin",async function(req,res){
     try {
       const user=await db.query(query,[username,password]);
       if(!user.rowCount){
+          alert("Invalid username or password");
         return res.status(401).json({ error: 'Invalid username or password.' });
       }
       else{
