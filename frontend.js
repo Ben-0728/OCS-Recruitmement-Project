@@ -8,7 +8,7 @@ async function submitForm() {
       return;
     }
   
-    await fetch('http://localhost:3000/signin', {
+    await fetch('https://ocs-recuitment-project.onrender.com/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
