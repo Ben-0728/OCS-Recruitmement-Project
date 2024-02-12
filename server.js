@@ -19,7 +19,7 @@ db.connect().then(function(){console.log("Connected to PostgreSQL")}).catch(func
 app.use(bodyParser.json());
 
 app.get("/", function(req, res){
-    res.sendFile("./frontend.html");
+    res.sendFile("frontend.html");
 })
 
 app.post("/signin",async function(req,res){
