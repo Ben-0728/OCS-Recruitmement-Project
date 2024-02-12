@@ -1,10 +1,12 @@
 const express = require("express");
 const { Client } = require("pg");
 const bodyParser = require("body-parser");
+const cors = require('cors');
 
 const app = express();
 
 app.use(express.static("/home/ben/Desktop/WebD/OCS Recruitmement/"));
+app.use(cors());
 
 const connectionString = "postgresql://bens.21354:dqyEb0CW7mPB@ep-lively-snow-a5o12dev.us-east-2.aws.neon.tech/WebD-Harkirat?sslmode=require"
 
