@@ -1,5 +1,5 @@
 # OCS Recruitment Project
-## Following servics were used:
+## Following services were used:
 1. Node.js(Express library) for Backend
 2. HTML,CSS,JS for Frontend
 3. Render.com for hosting the site
@@ -8,3 +8,18 @@
 
 Website link: https://ocs-recuitment-project.onrender.com/
 
+Here are some users in case you want to try out:
+<table>
+  <tr>
+    <th>userid</th>
+    <th>password</th>
+  </tr>
+  <tr>
+    <td>admint_test</td>
+    <td>password</td>
+  </tr>
+<tr>
+  <td>user1</td>
+  <td>passwordabc</td>
+</tr>
+</table>
