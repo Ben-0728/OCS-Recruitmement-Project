@@ -15,7 +15,7 @@ Here are some users in case you want to try out:
     <th>password</th>
   </tr>
   <tr>
-    <td>admint_test</td>
+    <td>admin_test</td>
     <td>password</td>
   </tr>
 <tr>
